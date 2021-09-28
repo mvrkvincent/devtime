@@ -1,0 +1,14 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #000000;
+    border: 5px solid;
+    border-color: #FF66FF;
+}
