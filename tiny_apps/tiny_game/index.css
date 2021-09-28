@@ -9,7 +9,6 @@ html, body {
 }
 
 canvas {
-    background-color: #000000;
     border: 5px solid;
-    border-color: #FF66FF;
+    border-color: #2ED9EB;
 }
