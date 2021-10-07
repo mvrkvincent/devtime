@@ -5,7 +5,7 @@ gridSize = 20
 tableSize = 25;
 
 // only values manipulated by our d-pad (directional values)
-directionX = directionY = 0;
+moveX = moveY = 0;
 
 // our snake
 body = []; // {x: posX, y: posY}
@@ -16,8 +16,8 @@ segments = 5;
 const game = () => {
 
     // adjust the position of our snake based on changes to directional values.
-    posX += directionX;
-    posY += directionY;
+    posX += moveX;
+    posY += moveY;
 
     ctx.fillStyle = '#000000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -70,20 +70,20 @@ const game = () => {
 const keyDown = e => {
     switch(e.keyCode) {
         case(65):
-            directionX = -1;
-            directionY = 0;
+            moveX = -1;
+            moveY = 0;
             break;
         case(87):
-            directionX = 0;
-            directionY = -1;
+            moveX = 0;
+            moveY = -1;
             break;
         case(68):
-            directionX = 1;
-            directionY = 0;
+            moveX = 1;
+            moveY = 0;
             break;
         case(83):
-            directionX = 0;
-            directionY = 1;
+            moveX = 0;
+            moveY = 1;
             break;
     }
 }
