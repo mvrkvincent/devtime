@@ -11,8 +11,8 @@ let apps = {
         name: 'shop',
         color: '#FDD835'
     },
-    note: {
-        name: 'note',
+    notes: {
+        name: 'notes',
         color: '#FFAB00'
     },
     game: {

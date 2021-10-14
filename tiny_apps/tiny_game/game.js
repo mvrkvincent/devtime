@@ -3,7 +3,7 @@ const generateGame = () => {
     canvas.id = 'game';
     canvas.width = '500';
     canvas.height = '500';
-    canvas.style.border = '4px solid #FF66FF'
+    canvas.style.border = `5px solid ${appList[0].color}`;
 
     const display = document.getElementById('display');
     display.append(canvas)

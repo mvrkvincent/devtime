@@ -3,7 +3,7 @@ const generateArt = () => {
 	canvas.id = 'art';
 	canvas.height = '500';
 	canvas.width = '500';
-	canvas.style.border = '4px solid #FF66FF'
+	canvas.style.border = `5px solid ${appList[0].color}`;
 	canvas.style.background = '#000000'
 
 	const ctx = canvas.getContext("2d");
