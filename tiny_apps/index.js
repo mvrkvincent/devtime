@@ -8,6 +8,7 @@ const cleanUp = () => {
     document.body.style.backgroundColor = '#FFFFFF';
     document.body.style.color = '#000000';
     display.innerHTML = '';
+    options.innerHTML = '';
 }
 
 const render = appName => {
@@ -15,6 +16,8 @@ const render = appName => {
     switch(appName) {
         case('game'):
             return generateGame();
+        case('math'):
+            return generateMath();
         case('notes'):
             return generateNotes();
         case('art'):
@@ -63,5 +66,6 @@ document.addEventListener('keydown', keyDown);
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    setDisplay();
+    // setDisplay();
+    generateMath();
 });

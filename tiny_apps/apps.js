@@ -3,8 +3,8 @@ let apps = {
         name: 'app',
         color: '#2ED9EB'
     },
-    blog: {
-        name: 'blog',
+    math: {
+        name: 'math',
         color: '#E91E63'
     },
     shop: {
